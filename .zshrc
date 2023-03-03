@@ -13,7 +13,6 @@ export ZSH="$HOME/.oh-my-zsh"
 
 export TERM="xterm-256color"
 POWERLEVEL9K_MODE="nerdfont-complete"
-ENABLE_CORRECTION="true"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -52,7 +51,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
@@ -81,7 +80,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -115,28 +114,22 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-
-export NODE_ENV=local
-export APIKEYFILE="/Users/alvaroagamez/august-runtime-creds/apicreds.json"
-export VAULT_TOKEN="root node server/server.js"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # ------------------------------------------------------- #
 #                   Custom Aliases                        #
 # ------------------------------------------------------- #
 
-# Misc
-alias editconfig="vim ~/.zshrc"
-alias editvim="vim ~/.vimrc"
+# Miscellaneous
+alias configzsh="vim ~/.zshrc"
+alias configvim="vim ~/.vimrc"
 alias reload="source ~/.zshrc"
 alias reloadvim="source ~/.vimrc"
 alias wttr="curl -s wttr.in/Malmo"
+alias python="python3"
 
 # Network
 alias mip="ipconfig getifaddr en0"
 alias ports="lsof -i -n -P"
 alias spdt="speedtest -s 31538"
-
-
-export PATH="/opt/homebrew/opt/ffmpeg@4/bin:$PATH"
