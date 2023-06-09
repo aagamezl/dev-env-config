@@ -7,6 +7,9 @@ scoop bucket add versions
 scoop bucket add java
 scoop bucket add nerd-fonts
 
+# Update Scoop Buckets
+scoop update
+
 # Java
 scoop install java/oraclejre8
 
