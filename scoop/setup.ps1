@@ -11,7 +11,7 @@ scoop bucket add nerd-fonts
 scoop install java/oraclejre8
 
 # Utils
-scoop install main/7zip extras/totalcommander extras/powertoys extras/windows-terminal extras/obs-studio extras/vlc extras/rufus extras/thisiswin11
+scoop install main/7zip extras/totalcommander extras/powertoys extras/obs-studio extras/vlc extras/rufus
 
 # Graphics
 scoop install extras/xnviewmp extras/paint.net
@@ -20,13 +20,13 @@ scoop install extras/xnviewmp extras/paint.net
 scoop install extras/slack extras/discord
 
 # Editors
-scoop install versions/vscode-insiders extras/notepadplusplus
+scoop install extras/notepadplusplus
 
 # Browsers
 scoop install versions/firefox-developer extras/brave
 
 # Dev Tools
-scoop install extras/postman extras/robo3t extras/dbeaver
+scoop install versions/vscode-insiders extras/windows-terminal extras/postman extras/robo3t extras/dbeaver
 
 # Office
 scoop install extras/wpsoffice extras/foxit-reader
