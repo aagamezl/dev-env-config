@@ -4,6 +4,7 @@
 # updated or not.
 #
 # Author: Álvaro José Agámez Licha (alvaroagamez@outlook.com)
+# GitHub: https://github.com/aagamezl/dev-env-config
 # License: MIT
 # Last Update: 2023-06-16
 #-------------------------------------------------------------------------------
