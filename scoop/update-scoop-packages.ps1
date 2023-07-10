@@ -4,13 +4,14 @@
 # updated or not.
 #
 # Author: Álvaro José Agámez Licha (alvaroagamez@outlook.com)
-# GitHub: https://github.com/aagamezl/dev-env-config
 # License: MIT
-# Last Update: 2023-06-16
+# Last Update: 2023-07-10
 #-------------------------------------------------------------------------------
 
+scoop update
+
 # Run the command and capture its output
-$commandOutput = & scoop update; scoop status
+$commandOutput = & scoop status
 
 # Rest of the code to extract the values under the "Name" column
 $lines = $commandOutput -split '\r?\n' | Select-Object
@@ -32,13 +33,13 @@ if ([string]::IsNullOrEmpty($packageNames)) {
 }
 
 # Output the names in a single line
-Write-Host 'Packages to Update: ' + $packageNames
+Write-Host 'Packages to Update:' $packageNames
 
 # Prompt the user for a decision
-$decision = Read-Host 'Do you want to update the packages? (yes/no)'
+$decision = Read-Host 'Do you want to update the packages? (Y/n)'
 
 # Perform actions based on user decision
-if ($decision -eq 'no') {
+if ($decision -eq 'n') {
   # Finish the script
   Write-Host 'Script finished.'
 
