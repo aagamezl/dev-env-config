@@ -38,4 +38,4 @@ scoop uninstall versions/steam
 scoop uninstall extras/aimp
 
 # Fonts
-scoop uninstall nerd-fonts/FiraCode
+scoop uninstall nerd-fonts/FiraCode-NF-Mono
