@@ -41,4 +41,4 @@ scoop install versions/steam
 scoop install extras/aimp
 
 # Fonts
-scoop install nerd-fonts/FiraCode-NF
+scoop install nerd-fonts/FiraCode-NF-Mono
